@@ -1,6 +1,6 @@
 # put your code here.
 
-
+import sys
 
 word_count = {}
 
@@ -18,6 +18,12 @@ def print_dictionary(dictionary):
     for key, value in dictionary.iteritems():
         print key, value
 
-count_words('twain.txt')
-print_dictionary(word_count)
+text_file = sys.argv[1]
+
+print sys.argv
+
+
+
+# count_words(text_file)
+# print_dictionary(word_count)
 
